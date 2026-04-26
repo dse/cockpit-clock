@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+#clock {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(50vw - 50vh);
+    right: calc(50vw + 50vh);
+}
