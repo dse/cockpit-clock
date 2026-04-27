@@ -1,3 +1,7 @@
+:root {
+    --background-color: #222;
+    --hand-drop-shadow-color: rgba(0 0 0 / 0.5);
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -6,17 +10,36 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
 }
 body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 1rem;
+    position: relative;
 }
-#clock {
+svg {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: calc(50vw - 50vh);
-    right: calc(50vw + 50vh);
+    width: 99vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+@media (max-aspect-ratio: 1/1) {
+    svg {
+        position: fixed;
+        width: 99vw;
+    }
+}
+#hourHandBase,
+#minuteHandBase,
+#secondHandBase {
+    filter: drop-shadow(0 0 3px var(--hand-drop-shadow-color));
+}
+#hourHandCircle,
+#minuteHandCircle,
+#secondHandCircle {
+    display: none;
+}
+
