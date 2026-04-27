@@ -7,6 +7,8 @@ let hourHandAttr;
 let minuteHandAttr;
 let secondHandAttr;
 
+const TICK_DURATION = 200;      // milliseconds
+
 function initClock() {
     hourHand   = document.getElementById("hourHand");
     minuteHand = document.getElementById("minuteHand");
@@ -70,7 +72,7 @@ function updateClock(msec) {
 
 function startClock() {
     const now = Date.now();
-    const delay = 125 - now % 125;
+    const delay = TICK_DURATION - now % TICK_DURATION;
     const then = now + delay;
     updateClock(then);
     setTimeout(startClock, delay);
