@@ -65,8 +65,10 @@
 }
 
 :root {
+    --foreground-color: #cfc;
+    --hand-color: #ff9;
     --background-color: #222;
-    --hand-drop-shadow-color: rgba(0 0 0 / 1.0);
+    --hand-drop-shadow-color: #000;
     --hand-drop-shadow-size: 6px;
 }
 *, *::before, *::after {
@@ -99,14 +101,36 @@ svg {
         width: 99vw;
     }
 }
-#hourHandBase,
-#minuteHandBase,
-#secondHandBase {
+#layer1 {
+    filter: drop-shadow(0 1px 0 black);
+}
+#layer1 * {
+    fill: var(--foreground-color) !important;
+}
+#layer2 * {
+    stroke: var(--foreground-color) !important;
+}
+
+#hourHandBase {
+    filter: drop-shadow(0 0 calc(var(--hand-drop-shadow-size) * 0.5) var(--hand-drop-shadow-color));
+}
+#minuteHandBase {
     filter: drop-shadow(0 0 var(--hand-drop-shadow-size) var(--hand-drop-shadow-color));
+}
+#secondHandBase {
+    filter: drop-shadow(0 0 calc(var(--hand-drop-shadow-size) * 0.75) var(--hand-drop-shadow-color));
+            drop-shadow(0 0 var(--hand-drop-shadow-size) var(--hand-drop-shadow-color));
 }
 #hourHandCircle,
 #minuteHandCircle,
 #secondHandCircle {
     display: none;
 }
+#hourHandHighlight,
+#minuteHandHighlight,
+#secondHandHighlight {
+    fill: var(--hand-color) !important;
+}
+
+
 
