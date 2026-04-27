@@ -1,6 +1,73 @@
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../fonts/routed-gothic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Routed Gothic Half Italic';
+    src: url('../fonts/routed-gothic-half-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Routed Gothic';
+    src: url('../fonts/routed-gothic-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Routed Gothic Condensed';
+    src: url('../fonts/routed-gothic-narrow.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Routed Gothic Condensed Half Italic';
+    src: url('../fonts/routed-gothic-narrow-half-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Routed Gothic Condensed';
+    src: url('../fonts/routed-gothic-narrow-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Routed Gothic Expanded';
+    src: url('../fonts/routed-gothic-wide.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Routed Gothic Expanded Half Italic';
+    src: url('../fonts/routed-gothic-wide-half-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Routed Gothic Expanded';
+    src: url('../fonts/routed-gothic-wide-italic.ttf') format('opentype');
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: italic;
+}
+
 :root {
     --background-color: #222;
-    --hand-drop-shadow-color: rgba(0 0 0 / 0.5);
+    --hand-drop-shadow-color: rgba(0 0 0 / 1.0);
+    --hand-drop-shadow-size: 6px;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -35,7 +102,7 @@ svg {
 #hourHandBase,
 #minuteHandBase,
 #secondHandBase {
-    filter: drop-shadow(0 0 3px var(--hand-drop-shadow-color));
+    filter: drop-shadow(0 0 var(--hand-drop-shadow-size) var(--hand-drop-shadow-color));
 }
 #hourHandCircle,
 #minuteHandCircle,
