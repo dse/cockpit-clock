@@ -8,6 +8,7 @@ let minuteHandAttr;
 let secondHandAttr;
 
 const TICK_DURATION = 200;      // milliseconds
+const DATE_TICK_DURATION = 1000 * 60;
 
 function initClock() {
     hourHand   = document.getElementById("hourHand");
@@ -23,8 +24,8 @@ function initClock() {
     hourHand.removeAttribute("transform");
     minuteHand.removeAttribute("transform");
     secondHand.removeAttribute("transform");
-    updateDate();
     startClock();
+    startDateClock();
 }
 
 function updateDate(msec) {
@@ -33,7 +34,6 @@ function updateDate(msec) {
     dayText.innerHTML = "" + ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"][date.getDay()];
     dateText.innerHTML = "" + date.getDate();
 }
-
 
 function updateClock(msec) {
     msec = msec ?? Date.now();
@@ -90,6 +90,14 @@ function startClock() {
     const then = now + delay;
     updateClock(then);
     setTimeout(startClock, delay);
+}
+
+function startDateClock() {
+    const now = Date.now();
+    const delay = DATE_TICK_DURATION - now % DATE_TICK_DURATION;
+    const then = now + delay;
+    updateDate(then);
+    setTimeout(startDateClock, delay);
 }
 
 if (document.readyState === 'complete') {
