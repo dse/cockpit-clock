@@ -13,14 +13,27 @@ function initClock() {
     hourHand   = document.getElementById("hourHand");
     minuteHand = document.getElementById("minuteHand");
     secondHand = document.getElementById("secondHand");
+
+    dateText = document.getElementById("tspan97-5");
+    dayText = document.getElementById("tspan2");
+
     hourHandAttr   = hourHand.getAttribute("transform");
     minuteHandAttr = minuteHand.getAttribute("transform");
     secondHandAttr = secondHand.getAttribute("transform");
     hourHand.removeAttribute("transform");
     minuteHand.removeAttribute("transform");
     secondHand.removeAttribute("transform");
+    updateDate();
     startClock();
 }
+
+function updateDate(msec) {
+    msec = msec ?? Date.now();
+    let date = new Date(msec);
+    dayText.innerHTML = "" + ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"][date.getDay()];
+    dateText.innerHTML = "" + date.getDate();
+}
+
 
 function updateClock(msec) {
     msec = msec ?? Date.now();
@@ -68,6 +81,7 @@ function updateClock(msec) {
     hourHand.setAttribute("transform", hourHandTransform);
     minuteHand.setAttribute("transform", minuteHandTransform);
     secondHand.setAttribute("transform", secondHandTransform);
+
 }
 
 function startClock() {

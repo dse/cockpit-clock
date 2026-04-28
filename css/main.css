@@ -70,6 +70,8 @@
     --background-color: #222;
     --hand-drop-shadow-color: #000;
     --hand-drop-shadow-size: 6px;
+    --date-window-border: #ff9;
+    --date-foreground-color: #ddd;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -131,6 +133,15 @@ svg {
 #secondHandHighlight {
     fill: var(--hand-color) !important;
 }
-
-
-
+#stop36,
+#stop41 {
+    stop-color: #333 !important;
+}
+#rect1,
+#rect2 {
+    stroke: var(--foreground-color) !important;
+}
+#text97-3 tspan,
+#text2 tspan {
+    fill: var(--date-foreground-color) !important;
+}
