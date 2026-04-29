@@ -1,4 +1,5 @@
 /*jshint esversion: 11 */
+"use strict";
 
 let hourHand;
 let minuteHand;
@@ -6,6 +7,8 @@ let secondHand;
 let hourHandAttr;
 let minuteHandAttr;
 let secondHandAttr;
+let dateText;
+let dayText;
 
 const TICK_DURATION = 200;      // milliseconds
 const DATE_TICK_DURATION = 1000 * 60;
@@ -56,7 +59,6 @@ function updateClock(msec) {
     m %= 360;
     h %= 360;
 
-    const xlate = 1;
     const hourHandTransform = [
         `translate(127,127)`,
         `rotate(${h})`,
