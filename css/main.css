@@ -1,4 +1,6 @@
 @import url("fonts.css");
+@import url("menu.css");
+@import url("modal.css");
 
 :root {
     --foreground-color: #cfc;

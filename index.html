@@ -7,6 +7,7 @@
         <title>Cockpit Clock</title>
         <link rel="stylesheet" href="css/main.css">
         <script src="js/main.js"></script>
+        <script src="js/modal.js"></script>
     </head>
     <body>
         <svg width="960.00006" height="960.00006" viewBox="0 0 254.00001 254.00002" version="1.1" id="svg1" inkscape:version="1.4.3 (1:1.4.3+202512261035+0d15f75042)" sodipodi:docname="clock.svg" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -146,5 +147,37 @@
                 </g>
             </g>
         </svg>
+        <div id="menu" class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__link" href="#" data-toggle-modal="#clocks-modal">&#x1f552;</a>
+                </li>
+            </ul>
+        </div>
+        <div id="clocks-modal" class="modal">
+            <div class="modal__backdrop"></div>
+            <div class="modal__dialog">
+                <div class="modal__close">
+                    <a class="modal__close-button" data-toggle-modal="#clocks-modal" href="#">&times;</a>
+                </div>
+                <h1>
+                    Clocks
+                </h1>
+                <ul>
+                    <li>
+                        <a href="../cockpit-clock/">Cockpit Clock</a>
+                    </li>
+                    <li>
+                        <a href="../flip-clock-2024/">Flip Clock</a>
+                    </li>
+                    <li>
+                        <a href="../scroll-clock/">Scroll Clock</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            initModalToggles();
+        </script>
     </body>
 </html>
