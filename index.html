@@ -12,7 +12,7 @@
     <body>
         <svg xmlns="http://www.w3.org/2000/svg"
             xmlns:svg="http://www.w3.org/2000/svg"
-            width="960px" height="960px" viewBox="0 0 960 960" version="1.1" id="svg-clock">
+            width="960px" height="960px" viewBox="0 0 960 960" version="1.1" id="clock">
             <defs>
                 <linearGradient id="date-day-complication-gradient" x1="0" x2="0" y1="0" y2="1">
                     <stop offset="0%" style="stop-color:#222222;stop-opacity:1" />
@@ -20,141 +20,143 @@
                     <stop offset="100%" style="stop-color:#222222;stop-opacity:1" />
                 </linearGradient>
             </defs>
-            <g id="svg-clock-face">
-                <g id="svg-clock-backing-layer">
-                    <circle style="fill:#222222;stroke:none" cx="480" cy="480" r="480" />
+            <g id="clock-face">
+                <g class="clock-backing-layer" id="clock-backing-layer">
+                    <circle cx="480" cy="480" r="480" />
                 </g>
-                <g id="svg-clock-ticks" style="filter:drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000)">
-                    <g id="svg-clock-ticks-seconds">
-                        <path id="svg-clock-tick-sec-1"  style="fill:#ffffff;stroke:none" d="M 520.76,53.9265 L 528.716,54.7627 L 526.208,78.6313 L 518.251,77.795 Z" />
-                        <path id="svg-clock-tick-sec-2"  style="fill:#ffffff;stroke:none" d="M 565.074,60.5212 L 572.899,62.1845 L 567.909,85.66 L 560.084,83.9967 Z" />
-                        <path id="svg-clock-tick-sec-3"  style="fill:#ffffff;stroke:none" d="M 608.455,71.7117 L 616.063,74.1839 L 608.647,97.0092 L 601.039,94.5371 Z" />
-                        <path id="svg-clock-tick-sec-4"  style="fill:#ffffff;stroke:none" d="M 650.429,87.3756 L 657.737,90.6295 L 647.976,112.555 L 640.667,109.301 Z" />
-                        <path id="svg-clock-tick-sec-6"  style="fill:#ffffff;stroke:none" d="M 728.336,131.39 L 734.808,136.092 L 720.701,155.508 L 714.229,150.806 Z" />
-                        <path id="svg-clock-tick-sec-7"  style="fill:#ffffff;stroke:none" d="M 763.415,159.257 L 769.36,164.611 L 753.301,182.446 L 747.356,177.093 Z" />
-                        <path id="svg-clock-tick-sec-8"  style="fill:#ffffff;stroke:none" d="M 795.389,190.64 L 800.743,196.585 L 782.907,212.644 L 777.554,206.699 Z" />
-                        <path id="svg-clock-tick-sec-9"  style="fill:#ffffff;stroke:none" d="M 823.908,225.192 L 828.61,231.664 L 809.194,245.771 L 804.492,239.299 Z" />
-                        <path id="svg-clock-tick-sec-11" style="fill:#ffffff;stroke:none" d="M 869.371,302.263 L 872.624,309.571 L 850.699,319.333 L 847.445,312.024 Z" />
-                        <path id="svg-clock-tick-sec-12" style="fill:#ffffff;stroke:none" d="M 885.816,343.937 L 888.288,351.545 L 865.463,358.961 L 862.991,351.353 Z" />
-                        <path id="svg-clock-tick-sec-13" style="fill:#ffffff;stroke:none" d="M 897.816,387.101 L 899.479,394.926 L 876.003,399.916 L 874.34,392.091 Z" />
-                        <path id="svg-clock-tick-sec-14" style="fill:#ffffff;stroke:none" d="M 905.237,431.284 L 906.073,439.24 L 882.205,441.749 L 881.369,433.792 Z" />
-                        <path id="svg-clock-tick-sec-16" style="fill:#ffffff;stroke:none" d="M 906.073,520.76 L 905.237,528.716 L 881.369,526.208 L 882.205,518.251 Z" />
-                        <path id="svg-clock-tick-sec-17" style="fill:#ffffff;stroke:none" d="M 899.479,565.074 L 897.816,572.899 L 874.34,567.909 L 876.003,560.084 Z" />
-                        <path id="svg-clock-tick-sec-18" style="fill:#ffffff;stroke:none" d="M 888.288,608.455 L 885.816,616.063 L 862.991,608.647 L 865.463,601.039 Z" />
-                        <path id="svg-clock-tick-sec-19" style="fill:#ffffff;stroke:none" d="M 872.624,650.429 L 869.371,657.737 L 847.445,647.976 L 850.699,640.667 Z" />
-                        <path id="svg-clock-tick-sec-21" style="fill:#ffffff;stroke:none" d="M 828.61,728.336 L 823.908,734.808 L 804.492,720.701 L 809.194,714.229 Z" />
-                        <path id="svg-clock-tick-sec-22" style="fill:#ffffff;stroke:none" d="M 800.743,763.415 L 795.389,769.36 L 777.554,753.301 L 782.907,747.356 Z" />
-                        <path id="svg-clock-tick-sec-23" style="fill:#ffffff;stroke:none" d="M 769.36,795.389 L 763.415,800.743 L 747.356,782.907 L 753.301,777.554 Z" />
-                        <path id="svg-clock-tick-sec-24" style="fill:#ffffff;stroke:none" d="M 734.808,823.908 L 728.336,828.61 L 714.229,809.194 L 720.701,804.492 Z" />
-                        <path id="svg-clock-tick-sec-26" style="fill:#ffffff;stroke:none" d="M 657.737,869.371 L 650.429,872.624 L 640.667,850.699 L 647.976,847.445 Z" />
-                        <path id="svg-clock-tick-sec-27" style="fill:#ffffff;stroke:none" d="M 616.063,885.816 L 608.455,888.288 L 601.039,865.463 L 608.647,862.991 Z" />
-                        <path id="svg-clock-tick-sec-28" style="fill:#ffffff;stroke:none" d="M 572.899,897.816 L 565.074,899.479 L 560.084,876.003 L 567.909,874.34 Z" />
-                        <path id="svg-clock-tick-sec-29" style="fill:#ffffff;stroke:none" d="M 528.716,905.237 L 520.76,906.073 L 518.251,882.205 L 526.208,881.369 Z" />
-                        <path id="svg-clock-tick-sec-31" style="fill:#ffffff;stroke:none" d="M 439.24,906.073 L 431.284,905.237 L 433.792,881.369 L 441.749,882.205 Z" />
-                        <path id="svg-clock-tick-sec-32" style="fill:#ffffff;stroke:none" d="M 394.926,899.479 L 387.101,897.816 L 392.091,874.34 L 399.916,876.003 Z" />
-                        <path id="svg-clock-tick-sec-33" style="fill:#ffffff;stroke:none" d="M 351.545,888.288 L 343.937,885.816 L 351.353,862.991 L 358.961,865.463 Z" />
-                        <path id="svg-clock-tick-sec-34" style="fill:#ffffff;stroke:none" d="M 309.571,872.624 L 302.263,869.371 L 312.024,847.445 L 319.333,850.699 Z" />
-                        <path id="svg-clock-tick-sec-36" style="fill:#ffffff;stroke:none" d="M 231.664,828.61 L 225.192,823.908 L 239.299,804.492 L 245.771,809.194 Z" />
-                        <path id="svg-clock-tick-sec-37" style="fill:#ffffff;stroke:none" d="M 196.585,800.743 L 190.64,795.389 L 206.699,777.554 L 212.644,782.907 Z" />
-                        <path id="svg-clock-tick-sec-38" style="fill:#ffffff;stroke:none" d="M 164.611,769.36 L 159.257,763.415 L 177.093,747.356 L 182.446,753.301 Z" />
-                        <path id="svg-clock-tick-sec-39" style="fill:#ffffff;stroke:none" d="M 136.092,734.808 L 131.39,728.336 L 150.806,714.229 L 155.508,720.701 Z" />
-                        <path id="svg-clock-tick-sec-41" style="fill:#ffffff;stroke:none" d="M 90.6295,657.737 L 87.3756,650.429 L 109.301,640.667 L 112.555,647.976 Z" />
-                        <path id="svg-clock-tick-sec-42" style="fill:#ffffff;stroke:none" d="M 74.1839,616.063 L 71.7117,608.455 L 94.5371,601.039 L 97.0092,608.647 Z" />
-                        <path id="svg-clock-tick-sec-43" style="fill:#ffffff;stroke:none" d="M 62.1845,572.899 L 60.5212,565.074 L 83.9967,560.084 L 85.66,567.909 Z" />
-                        <path id="svg-clock-tick-sec-44" style="fill:#ffffff;stroke:none" d="M 54.7627,528.716 L 53.9265,520.76 L 77.795,518.251 L 78.6313,526.208 Z" />
-                        <path id="svg-clock-tick-sec-46" style="fill:#ffffff;stroke:none" d="M 53.9265,439.24 L 54.7627,431.284 L 78.6313,433.792 L 77.795,441.749 Z" />
-                        <path id="svg-clock-tick-sec-47" style="fill:#ffffff;stroke:none" d="M 60.5212,394.926 L 62.1845,387.101 L 85.66,392.091 L 83.9967,399.916 Z" />
-                        <path id="svg-clock-tick-sec-48" style="fill:#ffffff;stroke:none" d="M 71.7117,351.545 L 74.1839,343.937 L 97.0092,351.353 L 94.5371,358.961 Z" />
-                        <path id="svg-clock-tick-sec-49" style="fill:#ffffff;stroke:none" d="M 87.3756,309.571 L 90.6295,302.263 L 112.555,312.024 L 109.301,319.333 Z" />
-                        <path id="svg-clock-tick-sec-51" style="fill:#ffffff;stroke:none" d="M 131.39,231.664 L 136.092,225.192 L 155.508,239.299 L 150.806,245.771 Z" />
-                        <path id="svg-clock-tick-sec-52" style="fill:#ffffff;stroke:none" d="M 159.257,196.585 L 164.611,190.64 L 182.446,206.699 L 177.093,212.644 Z" />
-                        <path id="svg-clock-tick-sec-53" style="fill:#ffffff;stroke:none" d="M 190.64,164.611 L 196.585,159.257 L 212.644,177.093 L 206.699,182.446 Z" />
-                        <path id="svg-clock-tick-sec-54" style="fill:#ffffff;stroke:none" d="M 225.192,136.092 L 231.664,131.39 L 245.771,150.806 L 239.299,155.508 Z" />
-                        <path id="svg-clock-tick-sec-56" style="fill:#ffffff;stroke:none" d="M 302.263,90.6295 L 309.571,87.3756 L 319.333,109.301 L 312.024,112.555 Z" />
-                        <path id="svg-clock-tick-sec-57" style="fill:#ffffff;stroke:none" d="M 343.937,74.1839 L 351.545,71.7117 L 358.961,94.5371 L 351.353,97.0092 Z" />
-                        <path id="svg-clock-tick-sec-58" style="fill:#ffffff;stroke:none" d="M 387.101,62.1845 L 394.926,60.5212 L 399.916,83.9967 L 392.091,85.66 Z" />
-                        <path id="svg-clock-tick-sec-59" style="fill:#ffffff;stroke:none" d="M 431.284,54.7627 L 439.24,53.9265 L 441.749,77.795 L 433.792,78.6313 Z" />
+                <g class="clock-ticks" id="clock-ticks">
+                    <g id="clock-ticks-seconds">
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-1"  d="M 520.76,53.9265 L 528.716,54.7627 L 526.208,78.6313 L 518.251,77.795 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-2"  d="M 565.074,60.5212 L 572.899,62.1845 L 567.909,85.66 L 560.084,83.9967 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-3"  d="M 608.455,71.7117 L 616.063,74.1839 L 608.647,97.0092 L 601.039,94.5371 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-4"  d="M 650.429,87.3756 L 657.737,90.6295 L 647.976,112.555 L 640.667,109.301 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-6"  d="M 728.336,131.39 L 734.808,136.092 L 720.701,155.508 L 714.229,150.806 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-7"  d="M 763.415,159.257 L 769.36,164.611 L 753.301,182.446 L 747.356,177.093 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-8"  d="M 795.389,190.64 L 800.743,196.585 L 782.907,212.644 L 777.554,206.699 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-9"  d="M 823.908,225.192 L 828.61,231.664 L 809.194,245.771 L 804.492,239.299 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-11" d="M 869.371,302.263 L 872.624,309.571 L 850.699,319.333 L 847.445,312.024 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-12" d="M 885.816,343.937 L 888.288,351.545 L 865.463,358.961 L 862.991,351.353 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-13" d="M 897.816,387.101 L 899.479,394.926 L 876.003,399.916 L 874.34,392.091 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-14" d="M 905.237,431.284 L 906.073,439.24 L 882.205,441.749 L 881.369,433.792 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-16" d="M 906.073,520.76 L 905.237,528.716 L 881.369,526.208 L 882.205,518.251 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-17" d="M 899.479,565.074 L 897.816,572.899 L 874.34,567.909 L 876.003,560.084 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-18" d="M 888.288,608.455 L 885.816,616.063 L 862.991,608.647 L 865.463,601.039 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-19" d="M 872.624,650.429 L 869.371,657.737 L 847.445,647.976 L 850.699,640.667 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-21" d="M 828.61,728.336 L 823.908,734.808 L 804.492,720.701 L 809.194,714.229 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-22" d="M 800.743,763.415 L 795.389,769.36 L 777.554,753.301 L 782.907,747.356 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-23" d="M 769.36,795.389 L 763.415,800.743 L 747.356,782.907 L 753.301,777.554 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-24" d="M 734.808,823.908 L 728.336,828.61 L 714.229,809.194 L 720.701,804.492 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-26" d="M 657.737,869.371 L 650.429,872.624 L 640.667,850.699 L 647.976,847.445 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-27" d="M 616.063,885.816 L 608.455,888.288 L 601.039,865.463 L 608.647,862.991 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-28" d="M 572.899,897.816 L 565.074,899.479 L 560.084,876.003 L 567.909,874.34 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-29" d="M 528.716,905.237 L 520.76,906.073 L 518.251,882.205 L 526.208,881.369 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-31" d="M 439.24,906.073 L 431.284,905.237 L 433.792,881.369 L 441.749,882.205 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-32" d="M 394.926,899.479 L 387.101,897.816 L 392.091,874.34 L 399.916,876.003 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-33" d="M 351.545,888.288 L 343.937,885.816 L 351.353,862.991 L 358.961,865.463 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-34" d="M 309.571,872.624 L 302.263,869.371 L 312.024,847.445 L 319.333,850.699 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-36" d="M 231.664,828.61 L 225.192,823.908 L 239.299,804.492 L 245.771,809.194 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-37" d="M 196.585,800.743 L 190.64,795.389 L 206.699,777.554 L 212.644,782.907 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-38" d="M 164.611,769.36 L 159.257,763.415 L 177.093,747.356 L 182.446,753.301 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-39" d="M 136.092,734.808 L 131.39,728.336 L 150.806,714.229 L 155.508,720.701 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-41" d="M 90.6295,657.737 L 87.3756,650.429 L 109.301,640.667 L 112.555,647.976 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-42" d="M 74.1839,616.063 L 71.7117,608.455 L 94.5371,601.039 L 97.0092,608.647 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-43" d="M 62.1845,572.899 L 60.5212,565.074 L 83.9967,560.084 L 85.66,567.909 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-44" d="M 54.7627,528.716 L 53.9265,520.76 L 77.795,518.251 L 78.6313,526.208 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-46" d="M 53.9265,439.24 L 54.7627,431.284 L 78.6313,433.792 L 77.795,441.749 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-47" d="M 60.5212,394.926 L 62.1845,387.101 L 85.66,392.091 L 83.9967,399.916 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-48" d="M 71.7117,351.545 L 74.1839,343.937 L 97.0092,351.353 L 94.5371,358.961 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-49" d="M 87.3756,309.571 L 90.6295,302.263 L 112.555,312.024 L 109.301,319.333 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-51" d="M 131.39,231.664 L 136.092,225.192 L 155.508,239.299 L 150.806,245.771 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-52" d="M 159.257,196.585 L 164.611,190.64 L 182.446,206.699 L 177.093,212.644 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-53" d="M 190.64,164.611 L 196.585,159.257 L 212.644,177.093 L 206.699,182.446 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-54" d="M 225.192,136.092 L 231.664,131.39 L 245.771,150.806 L 239.299,155.508 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-56" d="M 302.263,90.6295 L 309.571,87.3756 L 319.333,109.301 L 312.024,112.555 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-57" d="M 343.937,74.1839 L 351.545,71.7117 L 358.961,94.5371 L 351.353,97.0092 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-58" d="M 387.101,62.1845 L 394.926,60.5212 L 399.916,83.9967 L 392.091,85.66 Z" />
+                        <path class="clock-tick clock-tick-seconds" id="clock-tick-sec-59" d="M 431.284,54.7627 L 439.24,53.9265 L 441.749,77.795 L 433.792,78.6313 Z" />
                     </g>
-                    <g id="svg-clock-ticks-hours">
-                        <circle id="svg-clock-tick-10" style="fill:#ffffff;stroke:none" cx="119.733432025673" cy="272" r="12" />
-                        <circle id="svg-clock-tick-8"  style="fill:#ffffff;stroke:none" cx="119.733432025673" cy="688" r="12" />
-                        <circle id="svg-clock-tick-2"  style="fill:#ffffff;stroke:none" cx="840.266567974327" cy="272" r="12" />
-                        <circle id="svg-clock-tick-4"  style="fill:#ffffff;stroke:none" cx="840.266567974327" cy="688" r="12" />
-                        <circle id="svg-clock-tick-11" style="fill:#ffffff;stroke:none" cy="119.733432025673" cx="272" r="12" />
-                        <circle id="svg-clock-tick-1"  style="fill:#ffffff;stroke:none" cy="119.733432025673" cx="688" r="12" />
-                        <circle id="svg-clock-tick-7"  style="fill:#ffffff;stroke:none" cy="840.266567974327" cx="272" r="12" />
-                        <circle id="svg-clock-tick-5"  style="fill:#ffffff;stroke:none" cy="840.266567974327" cx="688" r="12" />
+                    <g class="clock-ticks-hours" id="clock-ticks-hours">
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-10" cx="119.733432025673" cy="272" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-8"  cx="119.733432025673" cy="688" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-2"  cx="840.266567974327" cy="272" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-4"  cx="840.266567974327" cy="688" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-11" cy="119.733432025673" cx="272" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-1"  cy="119.733432025673" cx="688" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-7"  cy="840.266567974327" cx="272" r="12" />
+                        <circle class="clock-tick clock-tick-hours" id="clock-tick-5"  cy="840.266567974327" cx="688" r="12" />
                     </g>
-                    <g id="svg-clock-ticks-3-6-9-12">
-                        <rect id="svg-clock-tick-9"  style="fill:#ffffff;stroke:none" width="24" height="24" x="52" y="468" />
-                        <rect id="svg-clock-tick-3"  style="fill:#ffffff;stroke:none" width="24" height="24" x="884" y="468" />
-                        <rect id="svg-clock-tick-6"  style="fill:#ffffff;stroke:none" width="24" height="24" x="468" y="884" />
-                        <path id="svg-clock-tick-12" style="fill:#ffffff;stroke:none"
-                            d="M 480,79.712812921102 L 464,52 L 496,52 Z" />
-                    </g>
-                </g>
-                <g id="svg-clock-legends" style="filter:drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000)">
-                    <g id="svg-clock-second-legends">
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="708" y="97.0924" transform="rotate(30 708 85.0924)">05</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="874.908" y="264" transform="rotate(60 874.908 252)">10</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="936" y="492" transform="rotate(0 936 480)">15</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="874.908" y="720" transform="rotate(-60 874.908 708)">20</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="708" y="886.908" transform="rotate(-30 708 874.908)">25</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="480" y="948" transform="rotate(0 480 936)">30</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="252" y="886.908" transform="rotate(30 252 874.908)">35</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="85.0924" y="720" transform="rotate(60 85.0924 708)">40</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="24" y="492" transform="rotate(0 24 480)">45</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="85.0924" y="264" transform="rotate(-60 85.0924 252)">50</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="252" y="97.0924" transform="rotate(-30 252 85.0924)">55</text>
-                        <text style="font-size:25.0435pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="480" y="36" transform="rotate(0 480 24)">60</text>
-                    </g>
-                    <g id="svg-clock-hour-legends">
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="480" y="187">12</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="647.5" y="225.881">1</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="771.851" y="347.5">2</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="767.52" y="682">4</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="646" y="803.52">5</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="480" y="846">6</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="314" y="803.52">7</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="190.748" y="683">8</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="205.47" y="357.5">10</text>
-                        <text style="font-size:75.1304pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="317" y="233.676">11</text>
+                    <g class="clock-ticks-hours clock-ticks-hours-3-6-9-12" id="clock-ticks-3-6-9-12">
+                        <rect class="clock-tick clock-tick-hours" id="clock-tick-9"  width="24" height="24" x="52" y="468" />
+                        <rect class="clock-tick clock-tick-hours" id="clock-tick-3"  width="24" height="24" x="884" y="468" />
+                        <rect class="clock-tick clock-tick-hours" id="clock-tick-6"  width="24" height="24" x="468" y="884" />
+                        <path class="clock-tick clock-tick-hours" id="clock-tick-12" d="M 480,79.712812921102 L 464,52 L 496,52 Z" />
                     </g>
                 </g>
-                <g id="svg-clock-decorative-inner-borders" style="filter:drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000)">
-                    <circle style="fill:none;stroke:#ffffff;stroke-width:4px;" cx="480" cy="480" r="384" />
+                <g class="clock-legends" id="clock-legends">
+                    <g id="clock-second-legends">
+                        <text class="clock-legend clock-legend-seconds" x="708" y="97.0924" transform="rotate(30 708 85.0924)">05</text>
+                        <text class="clock-legend clock-legend-seconds" x="874.908" y="264" transform="rotate(60 874.908 252)">10</text>
+                        <text class="clock-legend clock-legend-seconds" x="936" y="492" transform="rotate(0 936 480)">15</text>
+                        <text class="clock-legend clock-legend-seconds" x="874.908" y="720" transform="rotate(-60 874.908 708)">20</text>
+                        <text class="clock-legend clock-legend-seconds" x="708" y="886.908" transform="rotate(-30 708 874.908)">25</text>
+                        <text class="clock-legend clock-legend-seconds" x="480" y="948" transform="rotate(0 480 936)">30</text>
+                        <text class="clock-legend clock-legend-seconds" x="252" y="886.908" transform="rotate(30 252 874.908)">35</text>
+                        <text class="clock-legend clock-legend-seconds" x="85.0924" y="720" transform="rotate(60 85.0924 708)">40</text>
+                        <text class="clock-legend clock-legend-seconds" x="24" y="492" transform="rotate(0 24 480)">45</text>
+                        <text class="clock-legend clock-legend-seconds" x="85.0924" y="264" transform="rotate(-60 85.0924 252)">50</text>
+                        <text class="clock-legend clock-legend-seconds" x="252" y="97.0924" transform="rotate(-30 252 85.0924)">55</text>
+                        <text class="clock-legend clock-legend-seconds" x="480" y="36" transform="rotate(0 480 24)">60</text>
+                    </g>
+                    <g id="clock-hour-legends">
+                        <text class="clock-legend clock-legend-hours" x="480" y="187">12</text>
+                        <text class="clock-legend clock-legend-hours" x="647.5" y="225.881">1</text>
+                        <text class="clock-legend clock-legend-hours" x="771.851" y="347.5">2</text>
+                        <text class="clock-legend clock-legend-hours" x="767.52" y="682">4</text>
+                        <text class="clock-legend clock-legend-hours" x="646" y="803.52">5</text>
+                        <text class="clock-legend clock-legend-hours" x="480" y="846">6</text>
+                        <text class="clock-legend clock-legend-hours" x="314" y="803.52">7</text>
+                        <text class="clock-legend clock-legend-hours" x="190.748" y="683">8</text>
+                        <text class="clock-legend clock-legend-hours" x="205.47" y="357.5">10</text>
+                        <text class="clock-legend clock-legend-hours" x="317" y="233.676">11</text>
+                    </g>
                 </g>
-                <g id="svg-clock-day-complication">
-                    <rect id="svg-clock-day-complication-border" style="fill:url(#date-day-complication-gradient);stroke:#ffffff;stroke-width:2px;filter:drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000)"
+                <g class="clock-inner-borders" id="clock-inner-borders">
+                    <circle class="clock-inner-border" cx="480" cy="480" r="384" />
+                </g>
+                <g id="clock-day-complication">
+                    <rect class="clock-complication-border clock-day-complication-border" id="clock-day-complication-border"
                         x="132" y="440" width="216" height="80" />
-                    <text id="svg-clock-day-complication-text" style="font-size:58.4347826086957pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="240" y="508">SAT</text>
+                    <text class="clock-complication-text clock-day-complication-text" id="clock-day-complication-text" x="240" y="508">SAT</text>
                 </g>
-                <g id="svg-clock-date-complication">
-                    <rect id="svg-clock-date-complication-border" style="fill:url(#date-day-complication-gradient);stroke:#ffffff;stroke-width:2px;filter:drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000) drop-shadow(0 2px 0 #000)"
+                <g id="clock-date-complication">
+                    <rect class="clock-complication-border clock-date-complication-border" id="clock-date-complication-border"
                         x="696" y="440" width="132" height="80" />
-                    <text id="svg-clock-date-complication-text" style="font-size:58.4347826086957pt;font-family:'Routed Gothic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none" x="762" y="508">99</text>
+                    <text class="clock-complication-text clock-date-complication-text" id="clock-date-complication-text" x="762" y="508">99</text>
                 </g>
-                <g id="svg-clock-hour-hand" transform="rotate(359.4166666667 480 480)">
-                    <g id="svg-clock-hour-hand-shadow-base" style="filter: drop-shadow(0px 0px 12px rgba(0,0,0,1))">
-                        <path style="fill:#333333" d="M 480,228 L 448,312 L 472,480 L 488,480 L 512,312" />
-                        <circle style="fill:#333333" cx="480" cy="480" r="32" />
+                <g class="clock-hand clock-hour-hand" id="clock-hour-hand" transform="rotate(359.4166666667 480 480)">
+                    <g class="clock-hand-shadow-base clock-hour-hand-shadow-base" id="clock-hour-hand-shadow-base">
+                        <path d="M 480,228 L 448,312 L 472,480 L 488,480 L 512,312" />
+                        <circle cx="480" cy="480" r="32" />
                     </g>
-                    <path id="svg-clock-hour-hand-highlight" style="fill:#ffffff" d="M 480,228 L 448,312 L 460,396 L 500,396 L 512,312" />
+                    <path class="clock-hand-highlight clock-hour-hand-highlight" id="clock-hour-hand-highlight"
+                        d="M 480,228 L 448,312 L 460,396 L 500,396 L 512,312" />
                 </g>
-                <g id="svg-clock-minute-hand" transform="rotate(353 480 480)">
-                    <g id="svg-clock-minute-hand-shadow-base" style="filter: drop-shadow(0px 0px 24px rgba(0,0,0,1))">
-                        <path style="fill:#333333" d="M 480 120 L 456 240 L 472 480 L 488 480 L 504 240" />
-                        <circle style="fill:#333333" cx="480" cy="480" r="24" />
+                <g class="clock-hand clock-minute-hand" id="clock-minute-hand" transform="rotate(353 480 480)">
+                    <g class="clock-hand-shadow-base clock-minute-hand-shadow-base" id="clock-minute-hand-shadow-base">
+                        <path d="M 480 120 L 456 240 L 472 480 L 488 480 L 504 240" />
+                        <circle cx="480" cy="480" r="24" />
                     </g>
-                    <path id="svg-clock-minute-hand-highlight" style="fill:#ffffff" d="M 480 120 L 456 240 L 466.4 396 L 493.6 396 L 504 240" />
+                    <path class="clock-hand-highlight clock-minute-hand-highlight" id="clock-minute-hand-highlight"
+                        d="M 480 120 L 456 240 L 466.4 396 L 493.6 396 L 504 240" />
                 </g>
-                <g id="svg-clock-second-hand" transform="rotate(300 480 480)">
-                    <g id="svg-clock-second-hand-shadow-base" style="filter: drop-shadow(0px 0px 18px rgba(0,0,0,1))">
-                        <path style="fill:#333333" d="M 480 36 L 476 54 L 476 480 L 472 480 L 472 612 L 488 612 L 488 480 L 484 480 L 484 54" />
-                        <circle style="fill:#333333" cx="480" cy="480" r="16" />
-                        <circle style="fill:#333333" cx="480" cy="612" r="16" />
+                <g class="clock-hand clock-second-hand" id="clock-second-hand" transform="rotate(300 480 480)">
+                    <g class="clock-hand-shadow-base clock-second-hand-shadow-base" id="clock-second-hand-shadow-base">
+                        <path d="M 480 36 L 476 54 L 476 480 L 472 480 L 472 612 L 488 612 L 488 480 L 484 480 L 484 54" />
+                        <circle cx="480" cy="480" r="16" />
+                        <circle cx="480" cy="612" r="16" />
                     </g>
-                    <path id="svg-clock-second-hand-highlight" style="fill:#ffffff" d="M 480 36 L 476 54 L 476 432 L 484 432 L 484 54" />
+                    <path class="clock-hand-highlight clock-second-hand-highlight" id="clock-second-hand-highlight"
+                        d="M 480 36 L 476 54 L 476 432 L 484 432 L 484 54" />
                 </g>
             </g>
         </svg>
@@ -169,12 +171,12 @@
             var clock;
             window.addEventListener("load", function () {
                 clock = new Clock(
-                    document.getElementById("svg-clock"),
-                    document.getElementById("svg-clock-hour-hand"),
-                    document.getElementById("svg-clock-minute-hand"),
-                    document.getElementById("svg-clock-second-hand"),
-                    document.getElementById("svg-clock-day-complication-text"),
-                    document.getElementById("svg-clock-date-complication-text"),
+                    document.getElementById("clock"),
+                    document.getElementById("clock-hour-hand"),
+                    document.getElementById("clock-minute-hand"),
+                    document.getElementById("clock-second-hand"),
+                    document.getElementById("clock-day-complication-text"),
+                    document.getElementById("clock-date-complication-text"),
                     480,
                     480
                 );

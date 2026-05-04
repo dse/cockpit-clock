@@ -1,0 +1,85 @@
+.clock-backing-layer * {
+    fill: #222222;
+    stroke: none;
+}
+.clock-legend-seconds {
+    font-size: 25.0435pt;
+    font-family: 'Routed Gothic';
+    text-align: center;
+    text-anchor: middle;
+    fill: var(--foreground-color);
+    stroke: none
+}
+.clock-legend-hours {
+    font-size: 75.1304pt;
+    font-family: 'Routed Gothic';
+    text-align: center;
+    text-anchor: middle;
+    fill: var(--foreground-color);
+    stroke: none
+}
+.clock-inner-border {
+    fill: none;
+    stroke: var(--foreground-color);
+    stroke-width: 4px;
+}
+.clock-complication-border {
+    fill: url(#date-day-complication-gradient);
+    stroke: var(--date-window-border);
+    stroke-width: 2px;
+    filter: drop-shadow(0 2px 0 var(--clock-elements-drop-shadow))
+            drop-shadow(0 2px 0 var(--clock-elements-drop-shadow))
+            drop-shadow(0 2px 0 var(--clock-elements-drop-shadow));
+}
+.clock-complication-text {
+    font-size: 58.4347826086957pt;
+    font-family: 'Routed Gothic';
+    text-align: center;
+    text-anchor: middle;
+    fill: var(--date-foreground-color);
+    stroke: none;
+}
+.clock-tick {
+    fill: var(--foreground-color);
+}
+
+.clock-ticks,
+.clock-legends,
+.clock-inner-borders,
+.clock-complication-border {
+    filter: drop-shadow(0 2px 0 var(--clock-elements-drop-shadow))
+            drop-shadow(0 2px 0 var(--clock-elements-drop-shadow))
+            drop-shadow(0 2px 0 var(--clock-elements-drop-shadow));
+}
+.clock-ticks path,
+.clock-ticks circle,
+.clock-ticks rect {
+    fill: var(--foreground-color);
+}
+
+.clock-hand-shadow-base * {
+    fill: var(--hand-base-color);
+}
+.clock-hour-hand-shadow-base {
+    filter: drop-shadow(0px 0px 12px rgba(0,0,0,1))
+}
+.clock-minute-hand-shadow-base {
+    filter: drop-shadow(0px 0px 24px rgba(0,0,0,1))
+}
+.clock-second-hand-shadow-base {
+    filter: drop-shadow(0px 0px 18px rgba(0,0,0,1))
+}
+.clock-hand-highlight {
+    fill: var(--hand-color);
+}
+.clock-second-hand-highlight {
+    fill: var(--second-hand-color, var(--hand-color));
+}
+
+#clock-ticks path,
+#clock-ticks circle,
+#clock-ticks rect {
+    fill: var(--foreground-color) !important;
+}
+#clock-inner-border {
+}

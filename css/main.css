@@ -1,6 +1,7 @@
 @import url("fonts.css");
 @import url("menu.css");
 @import url("modal.css");
+@import url("clock.css");
 
 :root {
     --foreground-color: #dda;
@@ -9,6 +10,8 @@
     --background-color: #222;
     --date-window-border: var(--foreground-color);
     --date-foreground-color: #ddd;
+    --hand-base-color: #333;
+    --clock-elements-drop-shadow: #000;
 }
 
 *, *::before, *::after {
@@ -40,33 +43,4 @@ svg {
         position: fixed;
         width: 99vw;
     }
-}
-
-#svg-clock-hour-hand-highlight {
-    fill: var(--hand-color) !important;
-}
-#svg-clock-minute-hand-highlight {
-    fill: var(--hand-color) !important;
-}
-#svg-clock-second-hand-highlight {
-    fill: var(--second-hand-color, var(--hand-color)) !important;
-}
-#svg-clock-legends text {
-    fill: var(--foreground-color) !important;
-}
-#svg-clock-ticks path,
-#svg-clock-ticks circle,
-#svg-clock-ticks rect {
-    fill: var(--foreground-color) !important;
-}
-#svg-clock-decorative-inner-borders * {
-    stroke: var(--foreground-color) !important;
-}
-#svg-clock-day-complication rect,
-#svg-clock-date-complication rect {
-    stroke: var(--date-window-border) !important;
-}
-#svg-clock-day-complication-text,
-#svg-clock-date-complication-text {
-    fill: var(--date-foreground-color) !important;
 }
