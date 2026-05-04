@@ -9,7 +9,7 @@
             <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
         </linearGradient>
     </defs>
-    <g id="svg-clock__face">
+    <g id="svg-clock-face">
         <g id="svg-clock-backing-layer">
             <circle style="fill:#222222;stroke:none" cx="480" cy="480" r="480" />
         </g>
