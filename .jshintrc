@@ -2,7 +2,7 @@
     // Restricting Options
     // https://jshint.com/docs/options/#enforcing-options
     "bitwise":          true,
-    "curly":            true,
+    "curly":            false,
     "eqeqeq":           true,
     "esversion":        6,             // 6 = 2015; ...; 11 = 2020
     "forin":            true,
@@ -30,7 +30,7 @@
     "trailingcomma":    false,
     "undef":            true,
     "unused":           true,
-    "varstmt":          true,
+    "varstmt":          false,
 
     // Relaxing Options
     // https://jshint.com/docs/options/#relaxing-options
