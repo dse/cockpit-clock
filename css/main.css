@@ -1,17 +1,6 @@
-@import url("fonts.css");
-@import url("menu.css");
-@import url("modal.css");
-@import url("clock.css");
-
 :root {
     --foreground-color: #dda;
-    --hand-color: #ee8;
-    --second-hand-color: #ff6;
     --background-color: #222;
-    --date-window-border: var(--foreground-color);
-    --date-foreground-color: #ddd;
-    --hand-base-color: #333;
-    --clock-elements-drop-shadow: #000;
 }
 
 *, *::before, *::after {
