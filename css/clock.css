@@ -7,11 +7,11 @@
     --date-window-border: var(--foreground-color);
     --date-foreground-color: #ddd;
     --hand-base-color: #333;
-    --clock-foreground-color: var(--foreground-color);
+    --clock-foreground-color: #dda;
+    --backing-layer-color: #282828;
 }
 .clock-backing-layer * {
-    fill: #222222;
-    stroke: none;
+    fill: var(--backing-layer-color);
 }
 .clock-legend-seconds {
     font-size: 25.0435pt;
@@ -34,12 +34,6 @@
     stroke: var(--clock-foreground-color);
     stroke-width: 4px;
 }
-.clock-ticks,
-.clock-legends,
-.clock-inner-border,
-.clock-compilation-border {
-    filter: drop-shadow(0 2px 0 black) drop-shadow(0 2px 0 black) drop-shadow(0 2px 0 black);
-}
 .clock-complication-border {
     fill: url(#date-day-complication-gradient);
     stroke: var(--date-window-border);
@@ -57,21 +51,14 @@
     fill: var(--clock-foreground-color);
     stroke: none;
 }
-.clock-hand-shadow-base {
-    fill: var(--hand-base-color);
-}
 .clock-hand-highlight {
     fill: var(--hand-color);
 }
 .clock-second-hand-highlight {
     fill: var(--second-hand-color, var(--hand-color));
 }
-.clock-hour-hand-shadow-base {
-    filter: drop-shadow(0px 0px 12px rgba(0,0,0,1))
-}
-.clock-minute-hand-shadow-base {
-    filter: drop-shadow(0px 0px 24px rgba(0,0,0,1))
-}
-.clock-second-hand-shadow-base {
-    filter: drop-shadow(0px 0px 18px rgba(0,0,0,1))
+.clock-hand-shadow-base {
+    fill: var(--hand-base-color);
+    stroke: #000;
+    stroke-width: 2px;
 }

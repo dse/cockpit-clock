@@ -1,0 +1,13 @@
+.clock-hand-shadow-base {
+    stroke: none;
+    stroke-width: 0;
+}
+.clock-hour-hand-shadow-base {
+    filter: url(#hour-hand-filter);
+}
+.clock-minute-hand-shadow-base {
+    filter: url(#minute-hand-filter);
+}
+.clock-second-hand-shadow-base {
+    filter: url(#second-hand-filter);
+}

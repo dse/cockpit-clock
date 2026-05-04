@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/clock.css?v=9">
+        <link rel="stylesheet" href="css/clock-supports.css?v=10">
+        <link rel="stylesheet" href="css/clock-supports-not.css?v=10">
         <script src="js/main.js"></script>
         <script src="../clocks/js/modal.js"></script>
     </head>
@@ -23,6 +25,15 @@
                     <stop offset="50%" style="stop-color:#444444;stop-opacity:1" />
                     <stop offset="100%" style="stop-color:#222222;stop-opacity:1" />
                 </linearGradient>
+                <filter id="hour-hand-filter" dx="0" dy="0" x="-70%" y="-70%" width="240%" height="240%" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="0" stdDeviation="2" />
+                </filter>
+                <filter id="minute-hand-filter" dx="0" dy="0" x="-70%" y="-70%" width="240%" height="240%" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="0" stdDeviation="8" />
+                </filter>
+                <filter id="second-hand-filter" dx="0" dy="0" x="-70%" y="-70%" width="240%" height="240%" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="0" stdDeviation="14" />
+                </filter>
             </defs>
             <g id="clock-face">
                 <g class="clock-backing-layer" id="clock-backing-layer">
@@ -137,27 +148,23 @@
                         x="696" y="440" width="132" height="80" />
                     <text class="clock-complication-text clock-date-complication-text" id="clock-date-complication-text" x="762" y="508"><tspan>99</tspan></text>
                 </g>
-                <g class="clock-hand clock-hour-hand" id="clock-hour-hand" transform="rotate(359.4166666667 480 480)">
+                <g id="clock-hour-hand" transform="rotate(359.4166666667 480 480)">
                     <g class="clock-hand-shadow-base clock-hour-hand-shadow-base" id="clock-hour-hand-shadow-base">
-                        <path d="M 480,228 L 448,312 L 472,480 L 488,480 L 512,312" />
-                        <circle cx="480" cy="480" r="32" />
+                        <path d="M 480 228 L 448 312 L 467.77539 450.42773 A 32 32 0 0 0 448 480 A 32 32 0 0 0 480 512 A 32 32 0 0 0 512 480 A 32 32 0 0 0 492.22461 450.42773 L 512 312 L 480 228 z" />
                     </g>
                     <path class="clock-hand-highlight clock-hour-hand-highlight" id="clock-hour-hand-highlight"
                         d="M 480,228 L 448,312 L 460,396 L 500,396 L 512,312" />
                 </g>
-                <g class="clock-hand clock-minute-hand" id="clock-minute-hand" transform="rotate(353 480 480)">
+                <g id="clock-minute-hand" transform="rotate(353 480 480)">
                     <g class="clock-hand-shadow-base clock-minute-hand-shadow-base" id="clock-minute-hand-shadow-base">
-                        <path d="M 480 120 L 456 240 L 472 480 L 488 480 L 504 240" />
-                        <circle cx="480" cy="480" r="24" />
+                        <path d="M 480 120 L 456 240 L 470.5293 457.94727 A 24 24 0 0 0 456 480 A 24 24 0 0 0 480 504 A 24 24 0 0 0 504 480 A 24 24 0 0 0 489.4707 457.94727 L 504 240 L 480 120 z" />
                     </g>
                     <path class="clock-hand-highlight clock-minute-hand-highlight" id="clock-minute-hand-highlight"
                         d="M 480 120 L 456 240 L 466.4 396 L 493.6 396 L 504 240" />
                 </g>
-                <g class="clock-hand clock-second-hand" id="clock-second-hand" transform="rotate(300 480 480)">
+                <g id="clock-second-hand" transform="rotate(300 480 480)">
                     <g class="clock-hand-shadow-base clock-second-hand-shadow-base" id="clock-second-hand-shadow-base">
-                        <path d="M 480 36 L 476 54 L 476 480 L 472 480 L 472 612 L 488 612 L 488 480 L 484 480 L 484 54" />
-                        <circle cx="480" cy="480" r="16" />
-                        <circle cx="480" cy="612" r="16" />
+                        <path d="M 480 36 L 476 54 L 476 464.50781 A 16 16 0 0 0 464 480 A 16 16 0 0 0 472 493.85547 L 472 598.14453 A 16 16 0 0 0 464 612 A 16 16 0 0 0 480 628 A 16 16 0 0 0 496 612 A 16 16 0 0 0 488 598.14453 L 488 493.85547 A 16 16 0 0 0 496 480 A 16 16 0 0 0 484 464.50781 L 484 54 L 480 36 z" />
                     </g>
                     <path class="clock-hand-highlight clock-second-hand-highlight" id="clock-second-hand-highlight"
                         d="M 480 36 L 476 54 L 476 432 L 484 432 L 484 54" />

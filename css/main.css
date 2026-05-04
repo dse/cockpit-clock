@@ -1,5 +1,5 @@
 :root {
-    --foreground-color: #dda;
+    --foreground-color: #eee;
     --background-color: #222;
 }
 
@@ -22,14 +22,9 @@ body {
 }
 svg {
     position: fixed;
-    width: 99vh;
+    max-width: 96vw;
+    max-height: 96vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-@media (max-aspect-ratio: 1/1) {
-    svg {
-        position: fixed;
-        width: 99vw;
-    }
 }
