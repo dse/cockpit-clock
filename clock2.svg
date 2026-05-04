@@ -126,23 +126,19 @@
         </g>
         <g id="svg-clock-hour-hand" transform="rotate(359.4166666667 480 480)">
             <g id="svg-clock-hour-hand-shadow-base" style="filter: drop-shadow(0px 0px 12px rgba(0,0,0,1))">
-                <path style="fill:#333333" d="M 480,228 L 448,312 L 472,480 L 488,480 L 512,312" />
-                <circle style="fill:#333333" cx="480" cy="480" r="32" />
+                <path style="fill:#333333" d="M 480 228 L 448 312 L 467.77539 450.42773 A 32 32 0 0 0 448 480 A 32 32 0 0 0 480 512 A 32 32 0 0 0 512 480 A 32 32 0 0 0 492.22461 450.42773 L 512 312 L 480 228 z" />
             </g>
             <path style="fill:#ffffff" d="M 480,228 L 448,312 L 460,396 L 500,396 L 512,312" />
         </g>
         <g id="svg-clock-minute-hand" transform="rotate(353 480 480)">
             <g id="svg-clock-minute-hand-shadow-base" style="filter: drop-shadow(0px 0px 24px rgba(0,0,0,1))">
-                <path style="fill:#333333" d="M 480 120 L 456 240 L 472 480 L 488 480 L 504 240" />
-                <circle style="fill:#333333" cx="480" cy="480" r="24" />
+                <path style="fill:#333333" d="M 480 120 L 456 240 L 470.5293 457.94727 A 24 24 0 0 0 456 480 A 24 24 0 0 0 480 504 A 24 24 0 0 0 504 480 A 24 24 0 0 0 489.4707 457.94727 L 504 240 L 480 120 z " />
             </g>
             <path style="fill:#ffffff" d="M 480 120 L 456 240 L 466.4 396 L 493.6 396 L 504 240" />
         </g>
         <g id="svg-clock-second-hand" transform="rotate(300 480 480)">
             <g id="svg-clock-second-hand-shadow-base" style="filter: drop-shadow(0px 0px 18px rgba(0,0,0,1))">
-                <path style="fill:#333333" d="M 480 36 L 476 54 L 476 480 L 472 480 L 472 612 L 488 612 L 488 480 L 484 480 L 484 54" />
-                <circle style="fill:#333333" cx="480" cy="480" r="16" />
-                <circle style="fill:#333333" cx="480" cy="612" r="16" />
+                <path style="fill:#333333" d="M 480 36 L 476 54 L 476 464.50781 A 16 16 0 0 0 464 480 A 16 16 0 0 0 472 493.85547 L 472 598.14453 A 16 16 0 0 0 464 612 A 16 16 0 0 0 480 628 A 16 16 0 0 0 496 612 A 16 16 0 0 0 488 598.14453 L 488 493.85547 A 16 16 0 0 0 496 480 A 16 16 0 0 0 484 464.50781 L 484 54 L 480 36 z" />
             </g>
             <path style="fill:#ffffff" d="M 480 36 L 476 54 L 476 432 L 484 432 L 484 54" />
         </g>

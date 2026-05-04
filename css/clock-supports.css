@@ -1,0 +1,26 @@
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) and not (min-device-pixel-ratio: 0) { /\* should include safari 9 only *\/ */
+/*     .clock-hand-shadow-base { */
+/*         stroke: none; */
+/*         stroke-width: 0; */
+/*     } */
+/*     .clock-hand-shadow-base { */
+/*         stroke: none; */
+/*         stroke-width: 0; */
+/*     } */
+/* } */
+/* @supports (filter: drop-shadow(0 0 12px #000)) { */
+/*     .clock-hand-shadow-base { */
+/*         stroke: none; */
+/*         stroke-width: 0; */
+/*         fill: white; */
+/*     } */
+/*     .clock-hour-hand-shadow-base { */
+/*         filter: drop-shadow(0px 0px 12px #000); */
+/*     } */
+/*     .clock-minute-hand-shadow-base { */
+/*         filter: drop-shadow(0px 0px 18px #000); */
+/*     } */
+/*     .clock-second-hand-shadow-base { */
+/*         filter: drop-shadow(0px 0px 24px #000); */
+/*     } */
+/* } */
