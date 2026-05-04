@@ -3,14 +3,14 @@
 @import url("modal.css");
 
 :root {
-    --foreground-color: #cfc;
-    --hand-color: #ff9;
+    --foreground-color: #dda;
+    --hand-color: #ee8;
+    --second-hand-color: #ff6;
     --background-color: #222;
-    --hand-drop-shadow-color: #000;
-    --hand-drop-shadow-size: 6px;
-    --date-window-border: #ff9;
+    --date-window-border: var(--foreground-color);
     --date-foreground-color: #ddd;
 }
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -41,45 +41,32 @@ svg {
         width: 99vw;
     }
 }
-#layer1 {
-    filter: drop-shadow(0 1px 0 black);
-}
-#layer1 * {
-    fill: var(--foreground-color) !important;
-}
-#layer2 * {
-    stroke: var(--foreground-color) !important;
-}
 
-#hourHandBase {
-    filter: drop-shadow(0 0 calc(var(--hand-drop-shadow-size) * 0.5) var(--hand-drop-shadow-color));
-}
-#minuteHandBase {
-    filter: drop-shadow(0 0 var(--hand-drop-shadow-size) var(--hand-drop-shadow-color));
-}
-#secondHandBase {
-    filter: drop-shadow(0 0 calc(var(--hand-drop-shadow-size) * 0.75) var(--hand-drop-shadow-color));
-            drop-shadow(0 0 var(--hand-drop-shadow-size) var(--hand-drop-shadow-color));
-}
-#hourHandCircle,
-#minuteHandCircle,
-#secondHandCircle {
-    display: none;
-}
-#hourHandHighlight,
-#minuteHandHighlight,
-#secondHandHighlight {
+#svg-clock-hour-hand-highlight {
     fill: var(--hand-color) !important;
 }
-#stop36,
-#stop41 {
-    stop-color: #333 !important;
+#svg-clock-minute-hand-highlight {
+    fill: var(--hand-color) !important;
 }
-#rect1,
-#rect2 {
+#svg-clock-second-hand-highlight {
+    fill: var(--second-hand-color, var(--hand-color)) !important;
+}
+#svg-clock-legends text {
+    fill: var(--foreground-color) !important;
+}
+#svg-clock-ticks path,
+#svg-clock-ticks circle,
+#svg-clock-ticks rect {
+    fill: var(--foreground-color) !important;
+}
+#svg-clock-decorative-inner-borders * {
     stroke: var(--foreground-color) !important;
 }
-#text97-3 tspan,
-#text2 tspan {
+#svg-clock-day-complication rect,
+#svg-clock-date-complication rect {
+    stroke: var(--date-window-border) !important;
+}
+#svg-clock-day-complication-text,
+#svg-clock-date-complication-text {
     fill: var(--date-foreground-color) !important;
 }
